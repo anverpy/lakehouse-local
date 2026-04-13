@@ -3,8 +3,7 @@
 ## Descripción
 
 Pipeline de datos Medallion (Bronze → Silver → Gold) construido íntegramente en local
-usando Localstack para emular AWS sin coste. El objetivo es demostrar experiencia práctica
-en Data Engineering con tecnologías del stack AWS real.
+usando Localstack para emular AWS sin coste.
 
 ---
 
