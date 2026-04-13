@@ -1,0 +1,34 @@
+# Entornos virtuales de Python
+venv/
+env/
+.env/
+__pycache__/
+*.pyc
+*.pyo
+
+# Datos versionados del proyecto (raw/bronze/silver/gold)
+# Si en el futuro necesitas excluir artefactos grandes,
+# añade reglas específicas por ruta o patrón.
+
+# Configuración y estado de LocalStack
+localstack-data/
+docker-compose.override.yml
+
+# Checkpoints y temporales de Jupyter
+.ipynb_checkpoints/
+
+# Herramientas externas (si se clonaron por error dentro del repo)
+aws-cli/
+aws/
+
+# Archivos de SO
+.DS_Store
+Thumbs.db
+
+# Configuración de IDEs
+.vscode/
+.idea/
+
+# Documentos personales / CVs locales (opcional pero recomendado si no es parte del código)
+*resume.txt
+*.pdf
