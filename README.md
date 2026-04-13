@@ -21,23 +21,7 @@ usando Localstack para emular AWS sin coste.
 
 ## Arquitectura
 
-```text
-data/raw/ecommerce_customer_data.csv
-  ↓
-src/prod_kinesis.py  →  Kinesis Stream (ecommerce-stream)
-  ↓
-src/consumer_bronze.py
-  ↓
-s3://data-lake-bronze  (JSON Lines, inmutable, particionado por fecha)
-  ↓
-src/transform_silver.py
-  ↓
-s3://data-lake-silver  (Parquet, limpio, tipado, deduplicado)
-  ↓
-src/transform_gold.py
-  ↓
-s3://data-lake-gold    (Parquet, agregaciones de negocio)
-```
+<img src="assets/graph.png" width="90%"> 
 
 ---
 
