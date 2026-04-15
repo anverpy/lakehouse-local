@@ -258,8 +258,9 @@ vale más que adquirir._
 # 1. Arrancar Localstack
 cd ~/lakehouse-local && docker compose up -d
 
-# 2. Activar entorno Python
+# 2. Activar entorno Python e instalar dependencias
 source venv/bin/activate
+pip install -r requirements.txt
 
 # 3. Publicar eventos a Kinesis
 python src/prod_kinesis.py
